@@ -58,9 +58,75 @@
 
 // Classes and object 
 
-class bottlemaker {
-    constructor(public name : string , public price : number ){}
-}
+// class bottlemaker {
+//     constructor(public name : string , public price : number ){}
+// }
 
-let b1 = new  bottlemaker("Aquafina", 1235465);
-let b2 = new  bottlemaker("Nestle", 250);
+// let b1 = new  bottlemaker("Aquafina", 1235465);
+// let b2 = new  bottlemaker("Nestle", 250);
+
+
+
+// Access Modifier (public , private , protected)
+ 
+// private
+// class students {
+//     constructor(public student: string , private rollno:string|number){
+
+//     }
+//     changeRollno(){
+//         this.rollno = 1234 
+//     }
+// }
+
+// let std1 = new students("USman", 234)
+// // We can't change here like this but we can change in side the class
+// //std1.rollno = 1233
+// console.log(std1)
+
+// protected
+
+// class students{
+//     constructor(public name:string , protected rollno?:string|number){}
+// }
+
+// class class1 extends students{
+//     onChange(){
+//         this.rollno = 124
+//     }
+// }
+
+// let cls1 = new class1("Usman", 456)
+// console.log(cls1)
+
+
+// Getter && Setter
+
+// class User {
+//     constructor(public name:string , public age :number){
+//     }
+//      getname(){
+//         return this.name
+//      }
+
+//      setname(value:string){
+//         return this.name = value;
+//      }
+// }
+
+// let u1 = new User("tabish" , 21)
+// console.log(u1.setname("Usman"))
+
+
+
+// Static Member
+
+// class react{
+//     static version = 1.0;
+//     static getRandomNumber(){
+//         console.log(Math.random())
+//     }
+// }
+
+// let ver = new react()
+
