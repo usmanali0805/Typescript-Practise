@@ -130,3 +130,33 @@
 
 // let ver = new react()
 
+
+
+// Abstract CLasses and Methods
+
+// class Payment{
+//     constructor(protected amount:number , protected accountNo:string){}
+// }
+
+// class EasyPaisa extends Payment{
+    
+// }
+
+
+// Function and its Types
+
+// function abcd(name:string):void{
+//     console.log(name)
+// }
+
+// abcd("Usman")
+
+
+function abcdf(name:string , cb:(value:string)=>void):void{
+    cb(name)
+}
+
+abcdf("name" , (value:string)=>{
+    console.log(value)
+})
+
