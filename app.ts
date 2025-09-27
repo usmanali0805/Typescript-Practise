@@ -152,11 +152,43 @@
 // abcd("Usman")
 
 
-function abcdf(name:string , cb:(value:string)=>void):void{
-    cb(name)
+// function abcdf(name:string , cb:(value:string)=>void):void{
+//     cb(name)
+// }
+
+// abcdf("name" , (value:string)=>{
+//     console.log(value)
+// })
+
+
+// Default Parameter
+
+// function abcd(name:string , age:number , gender:string = "Not to be Disclosed"){
+//     console.log(name , age , gender);
+// }
+
+// abcd("Samanta maryam" , 24 )
+
+
+// Rest Parameter
+
+// function sum (...arr : number[]){
+//     console.log(arr);
+// }
+
+// sum(1,5,6,4,8,8,8,47,7)
+
+
+// Function Loading
+
+function abcd(a:string):void;
+function abcd(a:string , b:number):number;
+
+function abcd(a:any , b?:any){
+    if(typeof a=="String" && b === undefined){
+        console.log("hey");
+    }
+    if(typeof a === "string" && typeof b == "Number"){
+        return 123;
+    }
 }
-
-abcdf("name" , (value:string)=>{
-    console.log(value)
-})
-
