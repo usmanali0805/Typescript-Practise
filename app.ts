@@ -181,14 +181,60 @@
 
 // Function Loading
 
-function abcd(a:string):void;
-function abcd(a:string , b:number):number;
+// function abcd(a:string):void;
+// function abcd(a:string , b:number):number;
 
-function abcd(a:any , b?:any){
-    if(typeof a=="String" && b === undefined){
-        console.log("hey");
-    }
-    if(typeof a === "string" && typeof b == "Number"){
-        return 123;
-    }
-}
+// function abcd(a:any , b?:any){
+//     if(typeof a=="String" && b === undefined){
+//         console.log("hey");
+//     }
+//     if(typeof a === "string" && typeof b == "Number"){
+//         return 123;
+//     }
+// }
+
+
+// Generices
+
+
+// function abcd <T>(a:T):void{
+//     console.log(a)
+// }
+// abcd<string>("Usman")
+// abcd<number>(58)
+
+// Generices in interface 
+
+// interface Halwa <T>{
+//     name:string;
+//     age:number;
+//     key:T;
+// }
+
+// function abcd<Halwa>(obj:Halwa):void{
+//     console.log(obj.name , obj.age)
+// }
+
+// abcd({name:"foo" , age:25 , key :"34343"})
+
+// Generices in classes
+// class bottlemaker<T>{
+//     constructor(public key :T){}
+// }
+
+// let b1 = new bottlemaker("hey")
+// console.log(b1)
+
+
+// Assertion
+
+
+// Wrong once
+// let a:number = ("12")
+// console.log(typeof a)
+
+// correct once 
+// We can you all types of string property by using this (!.)
+// let a:number| string |boolean;
+// a = "USMAN"
+// a!.toLocaleLowerCase()
