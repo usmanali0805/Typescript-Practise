@@ -151,5 +151,26 @@
 // let b1 = new bottlemaker("hey")
 // console.log(b1)
 // Assertion
-var a = ("12");
-console.log(typeof a);
+// Wrong once
+// let a:number = ("12")
+// console.log(typeof a)
+// correct once 
+// We can you all types of string property by using this (!.)
+// let a:number| string |boolean;
+// a = "USMAN"
+// a!.toLocaleLowerCase()
+// Type Guard
+function abcd(val) {
+    if (typeof val === 'string') {
+        console.log(val.length);
+    }
+    else if (typeof val === 'number') {
+        console.log(val.toString());
+    }
+    else {
+        console.log('wrong number');
+    }
+}
+abcd('ali');
+abcd(25);
+abcd(undefined);

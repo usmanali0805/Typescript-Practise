@@ -238,3 +238,22 @@
 // let a:number| string |boolean;
 // a = "USMAN"
 // a!.toLocaleLowerCase()
+
+
+// Type Guard
+ 
+function abcd(val:string|number|any):void{
+    if (typeof val ==='string') {
+        console.log(val.length)
+    } else if(typeof val ==='number') {
+        console.log(val.toString())
+    }
+    else{
+        console.log('wrong number')
+    }
+}
+
+abcd('ali')
+abcd(25)
+abcd(undefined)
+
